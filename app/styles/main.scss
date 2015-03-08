@@ -1,0 +1,344 @@
+
+@import "compass";
+@import "susy";
+
+@import "partials/normalize";
+@import "partials/utilities";
+
+@import "partials/icomoon";
+
+//https://color.adobe.com/Theme-15-color-theme-5395969/
+$datacolor: #676567;
+$porfoliocolor: #12B3AE;
+$projectscolor: #FF6454;
+
+$text_color: #474647;
+
+$link: $datacolor;
+$hover: $projectscolor;
+
+$breakpoint: "max-width: 40em";
+
+$container_padding: 1.5em;
+
+/* sitewide */
+html, body	{
+    font-family: "Lucida Grande", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $text_color;
+}
+
+text {
+    fill: $text_color;
+}
+
+.container	{
+    @include container(55em);
+    padding: 0 $container_padding;
+}
+
+article	{
+    @include clearfix;
+    margin: 1.5em 0;
+    padding: 1.5em 0;
+}
+
+
+/* links */
+a	{
+    @include link-colors($link, $hover);
+    text-decoration: none;
+    @include transition;
+    &:hover {
+        background: lighten($datacolor, 30%);
+    }
+}
+
+ul {
+    li {
+        list-style: none;
+        margin-bottom: .75em;
+    }
+}
+
+/* nav */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    ul {
+        display: none;
+        &.active {
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            background: transparentize(white, .05);
+            display: block;
+        }
+        margin: 0;
+        padding: 0;
+        li {
+            text-align: center;
+            display: block;
+            margin: 2em;
+            padding: .5em;
+            a {
+                padding: 1em;
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 6em;
+    position: relative;
+}
+
+
+/* subtitle colors */
+#data, #portfolio, #projects {
+    @include transition;
+}
+#data	{
+    color: $datacolor;
+    fill: $datacolor;
+    &:hover {
+        fill: $projectscolor;
+    }
+}
+
+#portfolio	{
+    color: $porfoliocolor;
+    fill: $porfoliocolor;
+    &:hover {
+        fill: $datacolor;
+    }
+}
+
+#projects	{
+    color: $projectscolor;
+    fill: $projectscolor;
+    &:hover {
+        fill: $porfoliocolor;
+    }
+}
+
+#pienav {
+    text {
+        fill: white;
+    }
+}
+
+
+/* data */
+
+#staplegun, #ou {
+    img {
+        @include span(25%);
+        @include post(75%);
+    }
+    @include clearfix;
+    margin-bottom: 1.5em;
+}
+
+#vinyl	{
+    div img	{
+        @include span(3 of 12);
+        margin-bottom: 2%;
+        &:nth-child(4n)	{
+            @include last;
+        }
+        @media ($breakpoint) {
+            @include span(6 of 12);
+            &:nth-child(2n) {
+                @include last;
+            }
+        }
+        img {
+            @include span(12 last of 12);
+        }
+    }
+}
+
+#biopic	{
+    @include clearfix;
+    margin-bottom: 1.5em;
+    @include span(50%);
+    @include pre(25%);
+    @include post(25%);
+    @media ($breakpoint) {
+        @include span(80%);
+        @include pre(10%);
+        @include post(10%);
+    }
+    img {
+        @include span(12 last of 12);
+    }
+}
+
+#social {
+    ul {
+        @include clearfix;
+        @media ($breakpoint) {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    li {
+        padding: 2em;
+        float: left;
+        margin-right: .5em;
+        a {
+            padding: 1.5em;
+            font-size: 1.25em;
+            font-weight: bold;
+        }
+    }
+}
+
+#weekarticle {
+    @media ($breakpoint) {
+        display: none;
+    }
+}
+
+path {
+    stroke-linejoin: round;
+}
+
+.states {
+    fill: $datacolor;
+  stroke: #fff;
+}
+.states-borders {
+  fill: $datacolor;
+  stroke: #fff;
+}
+
+.livedarc {
+      fill: none;
+      stroke: $porfoliocolor;
+      stroke-linecap: round;
+}
+
+.points {
+    stroke: $porfoliocolor;
+    fill: $porfoliocolor;
+}
+
+.dot	{
+    stroke: #000;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+@media ($breakpoint) {
+    #skills {
+        text {
+            font-size: 10px;
+        }
+    }
+}
+
+label	{
+    margin-left: .5em;
+}
+
+/* projects */
+
+.projectsimage	{
+    img	{
+        @include span(60%);
+        @include pre(20%);
+        @include post(20%);
+        margin-bottom: 2em;
+    }
+}
+
+#pie {
+    text-align: center;
+}
+
+/* accessibility */
+#hovernav {
+    @include accessible_hidden;
+}
+
+/* animate views */
+.motion {
+    opacity: 1;
+    @include transition;
+    @include transition-duration(1000ms);
+}
+
+.motion.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.motion.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.toggle {
+	@media (max-width: 35em){ //breakpoint of mobile
+		display: block;
+	}
+	display: block;
+	width: 3em;
+	height: 2em;
+	position: absolute;
+	right: $container_padding;
+	top: $container_padding;
+    z-index: 10;
+    &:hover {
+        background: transparent !important;
+        span {
+            background-color: $datacolor;
+        }
+    }
+	span {
+		position: absolute;
+		background-color: $projectscolor; //color of the hamburger
+		height: .25em;
+		width: 100%;
+		@include transition; //uses compass
+	}
+	.top {
+		top: 0;
+		@include rotate(0deg); //uses compass
+	}
+	.middle {
+		top: .75em;
+	}
+	.bottom {
+		top: 1.5em;
+		@include rotate(0deg);
+	}
+	&.active {
+		.top {
+			top: .9em;
+			@include rotate(-45deg);
+		}
+		.middle {
+			background-color: transparent;
+			z-index: -1;
+		}
+		.bottom {
+			top: .9em;
+			@include rotate(45deg);
+		}
+	}
+}

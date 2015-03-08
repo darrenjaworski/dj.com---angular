@@ -1,0 +1,32 @@
+<h2 id="projects">projects</h2>
+
+<article ng-repeat="project in projects">
+    <h3>{{project.title}}</h3>
+    <div class="projectsimage">
+        <img src="{{project.image}}" alt="{{project.title}}">
+    </div>
+    <p>{{project.description}}</p>
+    <ul>
+        <li ng-repeat="link in project.links">
+            <a href="{{link.link}}" >{{link.title}}</a>
+        </li>
+    </ul>
+</article>
+
+<article>
+
+    <h3>fork</h3>
+
+    <ul>
+        <li>
+            <a href="https://github.com/darrenjaworski" target="_blank" class="icon-github"></a>
+        </li>
+        <li>
+            <a href="https://gist.github.com/darrenjaworski" target="_blank">gist</a>
+        </li>
+        <li>
+            <a href="http://bl.ocks.org/darrenjaworski" target="_blank">live code</a>
+        </li>
+    </ul>
+
+</article>

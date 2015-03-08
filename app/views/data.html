@@ -1,0 +1,563 @@
+<main>
+    <h2 id="data">data</h2>
+
+    <!-- geography -->
+    <article>
+        <h3>by geography</h3>
+        <p>timeline</p>
+        <ul>
+            <li>born in Norfolk, Virginia in 1987</li>
+            <li>moved to Pilot Mountain, North Carolina in early 90s</li>
+            <li>moved to Muldrow, Oklahoma in late 90s</li>
+            <li>currently residing in Norman</li>
+        </ul>
+        <div id="geography"></div>
+    </article>
+
+    <!-- education -->
+    <article>
+        <h3>by education</h3>
+
+        <div id="ou">
+            <img src="/images/oulogo.png" alt="University of Oklahoma Logo">
+        </div>
+
+        <p>University of Oklahoma</p>
+        <ul>
+            <li>BS - Microbiology '09</li>
+        </ul>
+    </article>
+
+    <!-- day -->
+    <article>
+        <h3>by day</h3>
+
+        <a href="http://staplegun.us">
+        <div id="staplegun">
+            <img src="/images/staplegun.png" alt="Staplegun Design, Inc.">
+        </div>
+        </a>
+
+        <p>Staplegun</p>
+        <ul>
+            <li>web developer</li>
+        </ul>
+    </article>
+
+    <!-- week -->
+    <article id="weekarticle">
+        <h3>by week</h3>
+        <form>
+                <input type="radio" name="mode" value="multiples" checked=""><label>dissonance</label>
+            <br>
+                <input type="radio" name="mode" value="stacked"><label>melody</label>
+        </form>
+        <div id="week"></div>
+    </article>
+
+    <!-- hobby -->
+    <article>
+        <h3>by hobby</h3>
+        <p>The Storyboarder Podcast</p>
+        <ul>
+            <li><a href="http://twitter.com/thestoryboarder">500 followers in two months</a></li>
+            <li>16 episodes</li>
+            <li>515 minutes of airtime</li>
+            <li>flash fiction</li>
+        </ul>
+        <p><a href="http://www.strava.com/athletes/djaws">Cycling</a></p>
+        <ul>
+            <li>Cannondale</li>
+            <li>CAAD8</li>
+            <li>black</li>
+        </ul>
+        <ul>
+            <li>Specialized</li>
+            <li>29" wheels</li>
+            <li>1,000 miles and counting</li>
+            <li>red</li>
+        </ul>
+        <p>iOS</p>
+        <ul>
+            <li>
+                <a href="https://itunes.apple.com/us/app/id663576850?mt=8" target="_blank">Tiny Death Star</a> - preventing Vader and Emperor from getting real jobs
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/pocket-trains/id635931971?mt=8" target="_blank">Pocket Trains</a> - 5 trains servicing Europe
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/pocket-planes/id491994942?mt=8" target="_blank">Pocket Planes</a> - 2,174,794 airline value
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/tiny-tower/id422667065?mt=8" target="_blank">Tiny Tower</a> - <a href="http://towers.nimblebit.com/198706512" target="_blank">102 stories</a>
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/nimble-quest/id583638819?mt=8" target="_blank">Nimble Quest</a> - 7 hereos unlocked
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/tiny-wings/id417817520?mt=8" target="_blank">Tiny Wings</a> - 93,134 top score
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/plants-vs.-zombies/id350642635?mt=8" target="_blank">Plants vs Zombies</a> - plant survivor
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/triple-town/id490532168?mt=8" target="_blank">Triple Town</a> - 3 castle high score
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/dots-a-game-about-connecting/id632285588?mt=8" target="_blank">Dots</a> - 289 personal record
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/twodots/id880178264?mt=8" target="_blank">Two Dots</a> - level 135
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/crossy-road-endless-arcade/id924373886?mt=8" target="_blank">Crossy Road</a> - 288
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/run-bird-run/id951346475?mt=8" target="_blank">Run Bird Run</a> - 135
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/spacedoggo!/id944924556?mt=8" target="_blank">Space Dog Go</a> - 280
+            </li>
+        </ul>
+    </article>
+
+    <!-- competency -->
+    <article>
+        <h3>by competency</h3>
+        <div id="skills"></div>
+        <ul>
+            <li>radius = daily use</li>
+            <li>x = experience (number of days)</li>
+            <li>y = competency level</li>
+            <li>color = preference (darker is stronger)</li>
+        </ul>
+    </article>
+
+    <article id="frameworks">
+        <h3>by frameworks</h3>
+        <ul>
+            <li>arcs represent frameworks and tools sized by preference/competency/use for given language</li>
+        </ul>
+        <div class="center-align">
+            <donut-chart data="donut" ng-repeat="donut in donuts"></donut-chart>
+        </div>
+    </article>
+
+    <!-- vinyl -->
+    <article id="vinyl">
+        <h3>by vinyl</h3>
+        <div>
+            <img src="{{image.url}}" alt="{{image.alt}}" ng-repeat="image in images">
+        </div>
+    </article>
+
+    <!-- me -->
+    <article id="bio">
+
+        <h3>by me</h3>
+
+        <div id="biopic">
+            <img src="/images/darrenbio.jpg" alt="Darren Jaworski">
+        </div>
+
+        <p>That's me. Staring at the camera for a picture that I use for every profile in social media. I'm a journalist. A developer. A podcaster. An adventurer. And repetitive. I'm a man who is wandering around the edges of technology, design, storytelling and creativity, trying to find an elegant insight into the world.</p>
+        <p>When I'm not on an expedition, you'll most likely find me on others - still exploring the wilderness on foot, bicycle, canoe or kayak. There is an unmatched tranquility that altitude, endless landscape, chirping birds, and a good book combine to produce.</p>
+    </article>
+
+    <!-- social -->
+    <article id="social">
+        <h3>by social</h3>
+        <ul>
+            <li>
+                <a href="https://twitter.com/DarrenJaws" target="_blank" class="icon-twitter"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/DarrenJJaworski" target="_blank" class="icon-facebook"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/darrenjaws" target="_blank" class="icon-instagram"></a>
+            </li>
+            <li>
+                <a href="http://www.linkedin.com/in/darrenjaworski" target="_blank" class="icon-linkedin"></a>
+            </li>
+            <li>
+                <a href="mailto:darrenjaworski@gmail.com?Subject=darren%20jaworski">@</a>
+            </li>
+            <li>
+                <a href="https://github.com/darrenjaworski" target="_blank" class="icon-github"></a>
+            </li>
+        </ul>
+
+    </article>
+</main>
+<script>
+    //map
+    function map() {
+
+        var width = parseInt($('main').css('width'));
+        var height = width * 0.642;
+        var coordinate = [[-76.285, 36.850], [-80.469, 36.386], [-94.598,35.406], [-97.439,35.222]];
+
+        var projection = d3.geo.albers().scale(width * 1.357).translate([width / 2, height / 2]);
+
+        var path = d3.geo.path().projection(projection);
+
+        var svg = d3.select("#geography").append("svg").style("width", width + "px").style("height", height + "px");
+
+        d3.json("/data/combined.json", function ready(error, us) {
+
+            if (error) {
+                console.log(error)
+            }
+
+            var states = us.objects.states,
+                lived = us.objects.points;
+
+            var state = svg.append("g")
+                    .attr("class", "states")
+                    .selectAll("path")
+                    .data(topojson.feature(us, states).features)
+                    .enter()
+                    .append("path")
+                    .attr("class", "state")
+                    .attr("d", path);
+
+            var live = svg.append("g")
+                    .attr("class", "lived")
+                    .selectAll("path")
+                    .data(topojson.feature(us, lived).features)
+                    .enter()
+                    .append("path")
+                    .attr("class", "points")
+                    .attr("d", path);
+
+            svg.append("path")
+                .datum({type: "LineString", coordinates: coordinate})
+                .attr("class", "livedarc")
+                .attr("d", path)
+                .style("stroke-width", (width * .005));
+
+        });
+
+    }
+
+    //chart
+    function chart() {
+
+        var width = parseInt( $('main').css('width') ),
+            width = width - (width * .1);
+            margin = {top: (width * .05), right: (width * .033), bottom: (width * .075), left: (width * .075)},
+            height = (width * .7) - margin.top - margin.bottom,
+            today = new Date();
+
+        function calcDateDiff(oldDate, newDate) {
+            var timediff = Math.abs(newDate.getTime() - oldDate.getTime());
+            return Math.ceil(timediff / (1000 * 3600 * 24));
+        }
+
+        function extentProp(array, prop, boolean) {
+            var values = array.map(function (el) {
+                return el[prop];
+            });
+            var max = Math.max.apply(Math, values);
+            var min = Math.min.apply(Math, values);
+            var array = [ min, max ];
+            if (boolean) {
+                array = [0 , max];
+            }
+            return array;
+        };
+
+        function maxProp(array, prop) {
+            var values = array.map(function (el) {
+                return el[prop];
+            });
+            var max = Math.max.apply(Math, values);
+            var min = Math.min.apply(Math, values);
+            var array = [ (min - 30), max ];
+
+            return array;
+        }
+
+        var data = [
+            {
+                "name" : "javascript",
+                "level" : 50,
+                "experience" : calcDateDiff(new Date("08/01/2012"), today),
+                "use" : 50,
+                "preference" : 70,
+            },
+            {
+                "name" : "java",
+                "level" : 05,
+                "experience" : calcDateDiff(new Date("01/01/2011"), today),
+                "use" : 05,
+                "preference" : 10,
+            },
+            {
+                "name" : "c#",
+                "level" : 25,
+                "experience" : calcDateDiff(new Date("01/01/2013"), today),
+                "use" : 15,
+                "preference" : 50,
+            },
+            {
+                "name" : "python",
+                "level" : 40,
+                "experience" : calcDateDiff(new Date("10/01/2012"), today),
+                "use" : 30,
+                "preference" : 55,
+            },
+            {
+                "name" : "php",
+                "level" : 60,
+                "experience" : calcDateDiff(new Date("08/01/2012"), today),
+                "use" : 60,
+                "preference" : 30,
+            }
+        ];
+
+        var x = d3.scale.linear()
+            .range([0, width]);
+
+        var y = d3.scale.linear()
+            .range([height, 0]);
+
+        var r = d3.scale.linear()
+            .range([3, 10]);
+
+        var color = d3.scale.linear()
+            .domain(extentProp(data, 'preference', false))
+            .range(["#C6DBEF", "#08306B"]);
+
+        var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("bottom");
+
+        var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left");
+
+        var svg = d3.select("#skills").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        x.domain(maxProp(data, 'experience', false)).nice();
+        y.domain(extentProp(data, 'level', true)).nice();
+        r.domain(extentProp(data, 'use', false)).nice();
+
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+            .append("text")
+            .attr("class", "label")
+            .attr("x", width)
+            .attr("y", -6)
+            .style("text-anchor", "end")
+            .text("experience (days since first use)");
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("class", "label")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("competency level (comfort)")
+
+        svg.selectAll(".dot")
+            .data(data)
+            .enter().append("circle")
+            .attr("class", "dot")
+            .attr("r", function(d) { return r(d.use); })
+            .attr("cx", function(d) { return x(d.experience); })
+            .attr("cy", function(d) { return y(d.level); })
+            .style("fill", function(d) { return color(d.preference); })
+            .append("title")
+            .text(function(d) { return d.name; });
+
+        var legend = svg.selectAll(".legend")
+            .data(data)
+            .enter().append("g")
+            .attr("class", "legend")
+            .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+        legend.append("rect")
+            .attr("x", width - 18)
+            .attr("width", 18)
+            .attr("height", 18)
+            .style("fill", function(d) { return color(d.preference); });
+
+        legend.append("text")
+            .attr("x", width - 24)
+            .attr("y", 9)
+            .attr("dy", ".35em")
+            .style("text-anchor", "end")
+            .text(function(d) { return d.name; });
+
+    }
+
+    //week chart
+    function weekChart() {
+
+        var parseDate = d3.time.format("%d").parse,
+            formatYear = d3.format(""),
+            formatDate = d3.format("%m"),
+            width = parseInt($('main').css('width'));
+
+        var margin = {top: (width * .075), right: (width * .075), bottom: (width * .04), left: (width * .08), label: (width * .01)},
+            height = (width * .5) - margin.top - margin.bottom;
+
+        var y0 = d3.scale.ordinal().rangeRoundBands([height, 0], .2);
+
+        var y1 = d3.scale.linear();
+
+        var x1 = d3.scale.ordinal().rangeRoundBands([0, width *.90], .1, 0);
+
+        var nest = d3.nest().key(function(d) {
+            return d.group;
+        });
+
+        var stack = d3.layout.stack().values(function(d) {
+            return d.values;
+        }).x(function(d) {
+            return d.date;
+        }).y(function(d) {
+            return d.value;
+        }).out(function(d, y0) {
+            d.valueOffset = y0;
+        });
+
+        var color1 = d3.scale.category20();
+
+        var svg2 = d3.select("#week").append("svg").attr("width", width).attr("height", height + margin.top + margin.bottom).append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        svg2.append("text").attr("class", "label").attr("x", width * .03).attr("y", (height + margin.label)).style("text-anchor", "start").text(function(d) {return "Sunday";});
+        svg2.append("text").attr("class", "label").attr("x", width * .15).attr("y", (height + margin.label)).style("text-anchor", "start").text(function(d) {return "Monday";});
+        svg2.append("text").attr("class", "label").attr("x", width * .28).attr("y", (height + margin.label)).style("text-anchor", "start").text(function(d) {return "Tuesday";});
+        svg2.append("text").attr("class", "label").attr("x", width * .40).attr("y", (height + margin.label)).style("text-anchor", "start").text(function(d) {return "Wednesday";});
+        svg2.append("text").attr("class", "label").attr("x", width * .54).attr("y", (height + margin.label)).style("text-anchor", "start").text(function(d) {return "Thursday";});
+        svg2.append("text").attr("class", "label").attr("x", width * .68).attr("y", (height + margin.label)).style("text-anchor", "start").text(function(d) {return "Friday";});
+        svg2.append("text").attr("class", "label").attr("x", width * .80).attr("y", (height + margin.label)).style("text-anchor", "start").text(function(d) {return "Saturday";});
+
+        d3.tsv("/data/weekgraph.tsv", function(error, data) {
+
+            data.forEach(function(d) {
+                d.date = parseDate(d.date);
+                d.value = +d.value;
+            });
+
+            var dataByGroup = nest.entries(data);
+
+            stack(dataByGroup);
+            x1.domain(dataByGroup[0].values.map(function(d) {
+                return d.date;
+            }));
+            y0.domain(dataByGroup.map(function(d) {
+                return d.key;
+            }));
+            y1.domain([0, d3.max(data, function(d) {
+                return d.value;
+            })]).range([y0.rangeBand(), 0]);
+
+            var group = svg2.selectAll(".group").data(dataByGroup).enter().append("g").attr("class", "group").attr("transform", function(d) {
+                return "translate(0," + y0(d.key) + ")";
+            });
+
+            group.append("text").style("text-anchor","end").attr("class", "group-label1").attr("x", -5).attr("y", function(d) {
+                return y1(d.values[0].value / 2);
+            }).attr("dy", ".35em").text(function(d) {
+                if (d.key == 1) {
+                    return "cooking";
+                } else if (d.key == 2) {
+                    return "cycling";
+                } else if (d.key == 3) {
+                    return "work";
+                } else if (d.key == 4) {
+                    return "reading";
+                } else if (d.key == 5) {
+                    return "coding";
+                } else if (d.key == 6) {
+                    return "sleeping";
+                } else {
+                    return "mystery";
+                }
+            });
+
+            group.selectAll("rect").data(function(d) {
+                return d.values;
+            }).enter().append("rect").style("fill", function(d) {
+                return color1(d.group);
+            }).attr("x", function(d) {
+                return x1(d.date);
+            }).attr("y", function(d) {
+                return y1(d.value);
+            }).attr("width", x1.rangeBand()).attr("height", function(d) {
+                return y0.rangeBand() - y1(d.value);
+            });
+
+            group.filter(function(d, i) {
+                return !i;
+            }).append("g").attr("class", "x axis").attr("transform", "translate(0," + y0.rangeBand() + ")");
+            //.call(xAxis);
+
+            d3.selectAll("input").on("change", change);
+
+            var timeout = setTimeout(function() {
+                d3.select("input[value=\"stacked\"]").property("checked", true).each(change);
+            }, 15000);
+
+            function change() {
+                clearTimeout(timeout);
+                if (this.value === "multiples")
+                    transitionMultiples();
+                else
+                    transitionStacked();
+            }
+
+            function transitionMultiples() {
+                var t = svg2.transition().duration(750), g = t.selectAll(".group").attr("transform", function(d) {
+                    return "translate(0," + y0(d.key) + ")";
+                });
+                g.selectAll("rect").attr("y", function(d) {
+                    return y1(d.value);
+                });
+                g.select(".group-label1").attr("y", function(d) {
+                    return y1(d.values[0].value / 2);
+                })
+            }
+
+            function transitionStacked() {
+                var t = svg2.transition().duration(750), g = t.selectAll(".group").attr("transform", "translate(0," + y0(y0.domain()[0]) + ")");
+                g.selectAll("rect").attr("y", function(d) {
+                    return y1(d.value + d.valueOffset);
+                });
+                g.select(".group-label1").attr("y", function(d) {
+                    return y1(d.values[0].value / 1 + d.values[0].valueOffset);
+                })
+            }
+        });
+
+    }
+
+
+    $(document).ready(function(){
+        chart();
+        map();
+        weekChart();
+    })
+
+    $(window).resize(function(){
+        $("#skills").empty();
+        $("#geography").empty();
+        $("#week").empty();
+        map();
+        chart();
+        weekChart();
+    })
+</script>
