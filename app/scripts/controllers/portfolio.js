@@ -81,7 +81,11 @@ angular.module('djcomAngularApp')
       {
         'link':'http://madialexander.com',
         'title':'Madi Alexander'
-      }
+    },
+    {
+        'link':'http://ea.darrenjaworski.com',
+        'title':'Estapraq Kahlil'
+    }
     ];
     $scope.privatetemp = [
         {
@@ -91,10 +95,6 @@ angular.module('djcomAngularApp')
         {
             'link':'http://km.darrenjaworski.com',
             'title':'personal block'
-        },
-        {
-            'link':'http://ea.darrenjaworski.com',
-            'title':'personal flat'
         }
     ];
     $scope.okwatch = [
@@ -237,7 +237,7 @@ angular.module('djcomAngularApp')
         'title':'Logo Design'
       },
       {
-        'link':'https://www.dropbox.com/s/u1jgyvhpev1vtfc/authorinfographic.png?dl=0',
+        'link':'https://www.dropbox.com/s/u1jgyvhpev1vtfc/authorinfographic.png?dl=1',
         'title':'Author Infographic'
       }
     ];
@@ -261,7 +261,7 @@ angular.module('djcomAngularApp')
     ];
     $scope.resume = [
         {
-            'link': 'https://www.dropbox.com/s/cdj9tvibqoc4amz/resume.pdf?dl=0',
+            'link': 'https://www.dropbox.com/s/cdj9tvibqoc4amz/resume.pdf?dl=1',
             'title': 'grab a copy'
         }
     ];
