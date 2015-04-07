@@ -18,6 +18,10 @@ angular.module('djcomAngularApp')
                 {
                     "link": "https://sleepy-refuge-4183.herokuapp.com/",
                     "title": "live"
+                },
+                {
+                    "link": "https://github.com/darrenjaworski/loopback-ok-lege",
+                    "title": "github"
                 }
             ]
         },
