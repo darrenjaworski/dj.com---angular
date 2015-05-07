@@ -43,6 +43,7 @@ angular.module('djcomAngularApp')
         { "url": "/images/bestcoast.jpg", "alt":"Best Coast" },
         { "url": "/images/bestcoasttwo.jpg", "alt":"Best Coast" },
         { "url": "/images/bestcoastthree.jpg", "alt":"Best Coast" },
+        { "url": "/images/bestcoastfour.jpg", "alt":"Best Coast" },
         { "url": "/images/civilwars.jpg", "alt":"Civil Wars" },
         { "url": "/images/civilwarstwo.jpg", "alt":"Civil Wars" },
         { "url": "/images/marvingaye.jpg", "alt":"Marvin Gaye" },
