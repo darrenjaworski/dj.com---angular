@@ -11,8 +11,19 @@ angular.module('djcomAngularApp')
   .controller('ProjectsCtrl', function ($scope) {
     $scope.projects = [
         {
+            "title": "twitter sentiment",
+            "image": "/images/twittersentiment.jpg",
+            "description": "Mini sentiment analysis experiment of twitter.",
+            "links": [
+                {
+                    "link": "https://shrouded-reaches-8468.herokuapp.com/",
+                    "title": "live"
+                }
+            ]
+        },
+        {
             "title": "oklege explorer",
-            "image": "/images/oklege.png",
+            "image": "/images/oklege.jpg",
             "description": "An app to explore the Oklahoma Legislature.",
             "links": [
                 {
@@ -27,7 +38,7 @@ angular.module('djcomAngularApp')
         },
       {
           "title": "a-f grades in oklahoma",
-          "image": "/images/afgrades.png",
+          "image": "/images/afgrades.jpg",
           "description": "An app to explore a-f grades for Oklahoma Schools.",
           "links": [
               {
@@ -38,7 +49,7 @@ angular.module('djcomAngularApp')
       },
       {
           "title": "earthquakes in oklahoma",
-          "image": "/images/earthquakes.png",
+          "image": "/images/earthquakes.jpg",
           "description": "A Primer on earthquakes in Oklahoma.",
           "links": [
               {
@@ -53,7 +64,7 @@ angular.module('djcomAngularApp')
       },
       {
           "title": "solar system",
-          "image": "/images/solar.png",
+          "image": "/images/solar.jpg",
           "description": "A play on scales and human perception.",
           "links": [
               {
@@ -68,7 +79,7 @@ angular.module('djcomAngularApp')
       },
       {
           "title": "tutorials for journalists",
-          "image": "/images/tutorial.png",
+          "image": "/images/tutorial.jpg",
           "description": "For a series of tutorials on gist and bl.ocks.org I will be writing journalism-centric d3 examples. In order to facilitate basic data visualization accompaniment to articles published by an average journalist, I'm writing them with reusability and ease of use in mind.",
           "links": [
               {
@@ -83,7 +94,7 @@ angular.module('djcomAngularApp')
       },
       {
           "title": "sunburst partition",
-          "image": "/images/sunburst.png",
+          "image": "/images/sunburst.jpg",
           "description": "A zoomable sunburst partition with label and annotations allowing users to fully interact with the Oklahoma State budget.",
           "links": [
               {
@@ -98,7 +109,7 @@ angular.module('djcomAngularApp')
       },
       {
           "title": "topology projections",
-          "image": "/images/censustract.png",
+          "image": "/images/censustract.jpg",
           "description": "TOPOJSON projections of various shapefiles of Oklahoma.. The topology is preserved from a shapefile to allow for implementation in infographics requiring spatial dimensions. Binding data to geographic divisions allow for endless visualizations.",
           "links": [
               {
@@ -113,7 +124,7 @@ angular.module('djcomAngularApp')
       },
       {
           "title": "animated scatterplot",
-          "image": "/images/scatterplot.png",
+          "image": "/images/scatterplot.jpg",
           "description": "A scatterplot of the cost of attendance and student debt for Oklahoma universities. The circle sizes represent total enrollment figures with the x axis representing tuition and fee and the y axis representing the debt load of students. A third dimension of time allows the user to see the increase in cost and borrowing for students.",
           "links": [
               {
@@ -128,7 +139,7 @@ angular.module('djcomAngularApp')
       },
       {
           "title": "the storyboarder podcast",
-          "image": "/images/storyboarderpod.png",
+          "image": "/images/storyboarderpod.jpg",
           "description": "The Storyboarder Podcast was a radio show dedicated to writing and storytelling. My friend Jelani Sims and I partnered for the joint venture in August of 2012. The website was designed, maintained, and coded by me from the ground up. It implements a robust back-end and content management system for podcasts, blogs and short fiction, as well as an iTunes RSS feed generation system.",
           "links": [ ]
       }

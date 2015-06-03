@@ -50,7 +50,6 @@ angular.module('djcomAngularApp')
                 .attr("text-anchor", "middle")
                 .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")rotate(" + angle(d) + ")"; })
                 .text(function(d) {
-                    console.log(d.data[0]);
                     return d.data[0]; });
 
                 function angle(d) {

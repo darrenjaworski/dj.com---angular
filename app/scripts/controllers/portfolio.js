@@ -136,7 +136,11 @@ angular.module('djcomAngularApp')
       },
       {
         'link':'http://oklahomawatch.org/2013/05/24/where-tornados-strike/',
-        'title':'Where Tornadoes Strike'
+        'title':'Where Tornadoes Strike (article)'
+      },
+      {
+        'link': 'http://darrenjaworski.cartodb.com/tables/tornadoes90_13/embed_map?title=false&description=false&search=false&shareable=false&cartodb_logo=true&scrollwheel=false&sql=&sw_lat=33.76088200086917&sw_lon=-103.86474609375&ne_lat=37&ne_lon=-93.31787109374999&height=600&id=cartodb-1369334401177',
+        'title': 'Where Tornadoes Strike (working graphic)'
       },
       {
         'link':'http://oklahomawatch.org/2013/05/10/data-driven-spin-the-wheel-to-analyze-the-state-budget/',
@@ -237,7 +241,7 @@ angular.module('djcomAngularApp')
         'title':'Logo Design'
       },
       {
-        'link':'https://www.dropbox.com/s/u1jgyvhpev1vtfc/authorinfographic.png?dl=1',
+        'link':'https://www.dropbox.com/s/3emisej5tg0ltf6/authorinfographic.jpg?dl=1',
         'title':'Author Infographic'
       }
     ];

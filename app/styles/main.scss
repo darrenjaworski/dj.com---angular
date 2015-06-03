@@ -1,21 +1,21 @@
 
 @import "compass";
-@import "susy";
+@import "../bower_components/susy/sass/susy";
 
 @import "partials/normalize";
 @import "partials/utilities";
 
 @import "partials/icomoon";
 
-//https://color.adobe.com/Theme-15-color-theme-5395969/
-$datacolor: #2F1837;
-$porfoliocolor: #8EBFA7;
-$projectscolor: #61433E;
+// colors from doc & merle watson record
+$datacolor: #53A15C;
+$porfoliocolor: #A5634B;
+$projectscolor: #D78F52;
 
 $text_color: #474647;
 
-$link: $datacolor;
-$hover: lighten(#BCAD9B, 15%);
+$link: $porfoliocolor;
+$hover: lighten(#A73635, 15%);
 
 /* links */
 a	{
@@ -70,7 +70,7 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 10;
+    z-index: 1000;
     ul {
         display: none;
         &.active {
@@ -151,9 +151,11 @@ main {
 }
 
 #vinyl	{
-    div img	{
+    .vinyl-cover	{
         @include span(3 of 12);
         margin-bottom: 2%;
+        position: relative;
+        overflow: hidden;
         &:nth-child(4n)	{
             @include last;
         }
@@ -165,6 +167,44 @@ main {
         }
         img {
             @include span(12 last of 12);
+            @include transition;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            @include transition;
+            background: rgba(white, .8);
+            box-sizing: border-box;
+            padding: 1.5em;
+            z-index: 10;
+            span {
+                display: block;
+                color: $link;
+                text-align: center;
+                margin-top: 2em;
+            }
+            @media ($breakpoint) {
+                padding: .5em;
+                span {
+                    margin-top: .5em;
+                }
+            }
+        }
+        &.active {
+            .overlay {
+                opacity: 1;
+            }
+            img {
+                @include filter(blur(5px));
+                z-index: -1;
+            }
         }
     }
 }
@@ -272,8 +312,9 @@ label	{
 }
 
 /* accessibility */
-#hovernav {
+#hovernav, .absolute {
     @include accessible_hidden;
+    top: 0;
 }
 
 /* animate views */
