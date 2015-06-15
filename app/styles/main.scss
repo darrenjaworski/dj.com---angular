@@ -8,14 +8,14 @@
 @import "partials/icomoon";
 
 // colors from doc & merle watson record
-$datacolor: #53A15C;
-$porfoliocolor: #A5634B;
-$projectscolor: #D78F52;
+$datacolor: #918C79;
+$porfoliocolor: #C2E0D1;
+$projectscolor: #5C562C;
 
 $text_color: #474647;
 
-$link: $porfoliocolor;
-$hover: lighten(#A73635, 15%);
+$link: $datacolor;
+$hover: darken($datacolor, 15%);
 
 /* links */
 a	{

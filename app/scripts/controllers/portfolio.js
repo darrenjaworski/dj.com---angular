@@ -17,6 +17,14 @@ angular.module('djcomAngularApp')
       ];
     $scope.staplegun = [
     {
+        'link': 'http://110.stplgn.us/',
+        'title': '110 events'
+    },
+    {
+        'link': 'http://clo.stplgn.us/',
+        'title': 'Oklahoma Commissioners of the Land Office'
+    },
+    {
         'link': 'http://oklahomaworks.gov/',
         'title': 'Oklahoma Works'
     },

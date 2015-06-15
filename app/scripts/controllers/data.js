@@ -68,7 +68,8 @@ angular.module('djcomAngularApp')
         { "url": "/images/jessieware.jpg", "alt":"Jessie Ware", "musician":"Jessie Ware", "album": "Devotion" },
         { "url": "/images/cavesingers.jpg", "alt":"Cave Singers", "musician":"The Cave Singers", "album": "Naomi" },
         { "url": "/images/purityring2.jpg", "alt":"Purity Ring", "musician":"Purity Ring", "album": "Another Eternity" },
-        { "url": "/images/docwatson.jpg", "alt": "Doc & Merle Watson", "musician":"Doc & Merle Watson", "album": "Ballads from Deep Gap" }
+        { "url": "/images/docwatson.jpg", "alt": "Doc & Merle Watson", "musician":"Doc & Merle Watson", "album": "Ballads from Deep Gap" },
+        { "url": "/images/docwatson2.jpg", "alt": "Doc & Merle Watson", "musician": "Doc Watson", "album": "Southbound" }
     ]
 
   });
